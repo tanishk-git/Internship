@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artist Gallery</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow p-4 text-center text-2xl font-semibold">
+    🎨 Artist Digital Gallery
+  </header>
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Upload Your Artwork</h2>
+      <form id="artForm" class="bg-white p-4 rounded shadow space-y-4">
+        <input type="text" id="title" placeholder="Artwork Title" class="w-full border p-2 rounded" required />
+        <textarea id="description" placeholder="Artwork Description" class="w-full border p-2 rounded" rows="3" required></textarea>
+        <input type="file" id="image" accept="image/*" class="w-full" required />
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add Artwork</button>
+        <p id="errorMsg" class="text-red-600"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Gallery</h2>
+      <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+    </section>
+  </main>
+
+    <footer class="bg-gray-100 mt-10 py-6 text-center text-sm text-gray-600 border-t">
+    <p>&copy; 2025 Artist Digital Gallery. All rights reserved.</p>
+    <p class="mt-1">Built with ❤️ using HTML, CSS & JavaScript</p>
+    <div class="mt-2">
+      <a href="#" class="text-blue-500 hover:underline mx-2">Privacy Policy</a> |
+      <a href="#" class="text-blue-500 hover:underline mx-2">Terms of Use</a> |
+      <a href="#" class="text-blue-500 hover:underline mx-2">Contact</a>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
