@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Factorial App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+    <p>Learn about our company, our team, and contact us below.</p>
+  </header>
+
+  <section class="history">
+    <h2>Company History</h2>
+    <p>We started as a small team passionate about web development and now help students learn through hands-on projects.</p>
+  </section>
+
+  <section class="team">
+    <h2>Our Team</h2>
+    <ul>
+      <li>Alice - Frontend Developer</li>
+      <li>Bob - Backend Developer</li>
+      <li>Charlie - UI/UX Designer</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Information</h2>
+    <p>Email: contact@ourcompany.com</p>
+    <p>Phone: +123 456 7890</p>
+  </section>
+
+  <section class="factorial">
+    <h2>Factorial Calculator</h2>
+    <input type="number" id="numberInput" placeholder="Enter a positive integer" />
+    <select id="method">
+      <option value="iterative">Iterative</option>
+      <option value="recursive">Recursive</option>
+    </select>
+    <button onclick="calculateFactorial()">Calculate</button>
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Our Company</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
