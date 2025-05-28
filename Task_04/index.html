@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Collaboration Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Cloud Document Collaboration</h1>
+      <p>Collaborate and share your ideas with ease</p>
+      <div class="theme-toggle">
+        <label for="themeSwitcher">🌞 / 🌙</label>
+        <input type="checkbox" id="themeSwitcher" />
+      </div>
+    </header>
+
+    <main>
+      <form id="docForm" class="card">
+        <input type="text" id="username" placeholder="Your name" required />
+        <textarea id="docContent" rows="6" placeholder="Write your document here..." required></textarea>
+        <button type="submit">Submit Document</button>
+        <p id="errorMsg" class="error"></p>
+      </form>
+
+      <section id="sharedDocs" class="card">
+        <h2>Shared Documents</h2>
+        <ul id="docList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CloudDoc. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
